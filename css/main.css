@@ -1,0 +1,135 @@
+body {
+    font-family: 'Work Sans', sans-serif;
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+h1,
+h2,
+h3 {
+    margin: 0;
+}
+.container {
+    background-color: #51509b;
+    margin: 20px auto;
+    padding: 70px;
+    width: fit-content;
+    border-radius: 10px;
+    
+}
+.container h1 {
+    color: white;
+    margin: 0;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+.container h1 i {
+    color: #ffc83d;
+}
+.container h1 + p {
+    color: white;
+    font-size: 14px;
+    margin: 20px 0 40px;
+}
+.container .content {
+    display: flex;
+    align-items: center;
+}
+.container .content > div {
+    box-shadow: 0 0 10px #ddd;
+    color: #404b5f;
+}
+.container .content > .box {
+    background-color: white;
+    border-radius: 10px;
+    padding: 50px;
+}  
+.container .content > .box h2,
+.container .content > .mini-box h3 {
+    font-size: 25px;
+    font-weight: 600;
+    position: relative;
+    width: fit-content;
+} 
+.container .content > .box h2::after,
+.container .content > .mini-box h3::after {
+    position: absolute;
+    content: '';
+    background-color: rgb(229 175 64 / 30%);
+    width: calc(100% - 30px);
+    height: 10px;
+    bottom: 0;
+    right: 0;
+}
+.container .content > .box h2 i,
+.container .content > .mini-box h3 i{
+    color: #e5af40;
+    font-size: 22px;
+}
+.container .content .box ul li,
+.container .content .mini-box ul li {
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+    font-size: 12px;
+    font-weight: 500;
+}
+.container .content .box ul li:first-child,
+.container .content .mini-box ul li:first-child {
+    font-weight: 600;
+}
+.container .content .box .pricing,
+.container .content .mini-box .pricing {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+}
+.container .content .box .pricing div,
+.container .content .mini-box .pricing div {
+    position: relative;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.container .content .box .pricing div i,
+.container .content .mini-box .pricing div i {
+    position: absolute;
+    left: -15px;
+    top: 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+.container .content .box .pricing span,
+.container .content .mini-box .pricing span {
+    bottom: -5px;
+    font-weight: normal;
+    font-size: 14px;
+    position: absolute;
+    font-weight: 600;
+}
+.container .content .box .pricing + p {
+    font-size: 12px;
+}
+.container .content .box .pricing + p span {
+    font-weight: 600;
+}
+.container .content .box a.buy,
+.container .content .mini-box a.buy {
+    background-color: #e5af40;
+    color: white;
+    padding: 10px 15px;
+    font-weight: 600;
+    border-radius: 6px;
+}
+.container .content > .mini-box {
+    background-color: #ffffff;
+    border-radius: 0 10px 10px 0;
+    padding: 50px;
+    height: fit-content;
+}
